@@ -1,12 +1,20 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: [
-    "./src/index.html",
-    "node_modules/preline/dist/*.js",
-    "./node_modules/flowbite/**/*.js",
-  ],
+  content: ["./src/**/*.{html,js}"],
   theme: {
-    extend: {},
+    container: {
+      center: true,
+      padding: "16px,",
+    },
+    extend: {
+      colors: {
+        primary: "#0f766e",
+        dark: "#171717",
+      },
+      screens: {
+        "2xl": "1320px",
+      },
+    },
   },
-  plugins: [require("preline/plugin"), require("flowbite/plugin")],
+  plugins: [],
 };
