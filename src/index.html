@@ -7,18 +7,78 @@
     <link rel="icon" href="/src/gambar/icon.png" />
     <link rel="stylesheet" href="output.css" />
   </head>
-  <body class="bg-purple-100">
+  <body class="bg-blue-950">
     <!--Header Start-->
     <header
       class="bg-transparent absolute top-0 left-0 w-full flex items-center z-10"
     >
       <div class="container">
-        <div class="felx items-center justify-between relative">
-          <div class="px-4"></div>
+        <div class="flex items-center justify-between relative">
+          <div class="flex items-center px-4">
+            <img
+              src="/Gambar/MyPicture.png"
+              rel="logo"
+              class="size-20 m-0 p-0"
+            />
+            <h1 class="text-center font-bold pl-2 pt-6">My Website</h1>
+          </div>
+          <div class="flex items-center px-4">
+            <button
+              id="humburger"
+              name="hamburger"
+              type="button"
+              class="block absolute right-4 lg:hidden"
+            >
+              <span
+                class="hamburger-line origin-top-left transition duration-300 ease-in-out"
+              ></span>
+              <span class="hamburger-line"></span>
+              <span
+                class="hamburger-line origin-bottom-left transition duration-300 ease-in-out"
+              ></span>
+            </button>
+            <!--Navbar Start-->
+            <nav
+              id="nav-menu"
+              class="hidden absolute py-5 bg-white shadow-lg rounded-lg max-w-[250px] w-full top-full right-4 lg:block lg:static lg:bg-transparent lg:max-w-full lg:rounded-none lg:shadow-none"
+            >
+              <ul class="block lg:flex">
+                <li class="group">
+                  <a
+                    href="#home"
+                    class="text-base text-dark py-2 mx-8 flex group-hover:text-primary"
+                    >Beranda</a
+                  >
+                </li>
+                <li class="group">
+                  <a
+                    href="#portofolio"
+                    class="text-base text-dark py-2 mx-8 flex group-hover:text-primary"
+                    >Portofolio</a
+                  >
+                </li>
+                <li class="group">
+                  <a
+                    href="#about"
+                    class="text-base text-dark py-2 mx-8 flex group-hover:text-primary"
+                    >About Me</a
+                  >
+                </li>
+                <li class="group">
+                  <a
+                    href="#contact"
+                    class="text-base text-dark py-2 mx-8 flex group-hover:text-primary"
+                    >Contact</a
+                  >
+                </li>
+              </ul>
+            </nav>
+            <!--Navbar End-->
+          </div>
         </div>
       </div>
     </header>
-    <!--Header Start-->
+    <!--Header End-->
     <!--Hero start-->
     <section id="home" class="pt-36">
       <div class="container">
@@ -73,8 +133,8 @@
         </div>
       </div>
     </section>
-    <!--Hero end-->
-    <!-- About Start-->
+    <!--Hero Section end-->
+    <!-- About Section Start-->
     <section id="about" class="pt-36 pb-32">
       <div class="container">
         <div class="flex felx-wrap">
@@ -99,6 +159,10 @@
         </div>
       </div>
     </section>
-    <!-- About end-->
+    <!-- About Section end-->
+    <!-- Portofolio Section start-->
+    <section id="portofolio" class=""></section>
+    <!-- Portofolio Section end-->
+    <script src="/src/script.js"></script>
   </body>
 </html>
