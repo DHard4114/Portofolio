@@ -17,7 +17,7 @@ body {
 }
 
 .hamburger-active > span:nth-child(1) {
-  @apply bg-white rotate-45;
+  @apply bg-slate-700 rotate-45;
 }
 
 .hamburger-active > span:nth-child(2) {
@@ -25,5 +25,5 @@ body {
 }
 
 .hamburger-active > span:nth-child(3) {
-  @apply bg-white -rotate-45;
+  @apply bg-slate-700 -rotate-45;
 }
